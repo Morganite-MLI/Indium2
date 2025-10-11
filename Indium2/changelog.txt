@@ -1,32 +1,10 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.3.3
-Date: 2024-07-05
-  Features:
-    - Fixed error when uning bzsilicon but not solar cell option.
+Version: 2.0.1
+Date: 11.10.2025
+  Bug Fixes:
+    - Increase mod compatibility
 ---------------------------------------------------------------------------------------------------
-Version: 0.3.2
-Date: 2024-01-21
+Version: 2.0.0
+Date: 10.10.2025
   Features:
-    - Removed all old indium ore references.
-    - Removed old unused files.
----------------------------------------------------------------------------------------------------
-Version: 0.3.1
-Date: 2024-01-13
-  Features:
-    - Added indite ore to SE core fragment.
-    - Replaced indium ore with indite ore.
----------------------------------------------------------------------------------------------------
-Version: 0.3.0
-Date: 2023-12-24
-  Features:
-    - Added 248k support (molten, pure and cast indium)
----------------------------------------------------------------------------------------------------
-Version: 0.2.0
-Date: 2023-12-19
-  Features:
-    - Added blank advanced tech card.
----------------------------------------------------------------------------------------------------
-Version: 0.1.0
-Date: 2023-11-23
-  Features:
-    - Alpha release.
+    - Update to Factorio 2.0
