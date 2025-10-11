@@ -1,5 +1,6 @@
 local resource_autoplace = require('resource-autoplace');
 local item_sounds = require('__base__.prototypes.item_sounds')
+local util = require("data-util")
 
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["indite-ore"] = {}
 data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["indite-ore"] = {}
@@ -72,5 +73,5 @@ data:extend({
 })
 
 if mods["Krastorio2"] then
-  util.add_product("enriched-copper", { name = "indite-ore", amount = 1, probability = 0.09 })
+  util.add_product("kr-enriched-copper", { name = "indite-ore", amount = 1, probability = 0.09 })
 end

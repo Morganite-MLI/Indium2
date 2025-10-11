@@ -44,7 +44,7 @@ data:extend({
         icon_size = 64,
         icons = (mods["Krastorio2"] and
         {
-          { icon = "__248k-Redux__/ressources/fluids/el_dirty_water.png", icon_size = 64},
+          { icon = "__248k-Redux-graphics__/ressources/fluids/el_dirty_water.png", icon_size = 64},
           { icon = "__Indium2__/graphics/icons/indite-ore.png", icon_size = 64, scale=0.2, shift= {-8, -8}},
         } or {
           { icon = "__Indium2__/graphics/icons/indite-ore.png", icon_size = 64},

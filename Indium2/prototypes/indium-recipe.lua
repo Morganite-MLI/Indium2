@@ -41,7 +41,7 @@ data:extend({
 
 local solder_ingredients = {{type="item", name="indium-plate", amount=6}}
 if mods["bzlead"] then
-  solder_ingredients = {{type="item", name="indium-plate", 3}, {"lead-plate", amount=3}}
+  solder_ingredients = {{type="item", name="indium-plate", amount=3}, {type="item", name="lead-plate", amount=3}}
 end
 local solder_category = "crafting"
 local solder_subgroup = "intermediate-product"
