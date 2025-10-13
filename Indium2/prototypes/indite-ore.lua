@@ -73,5 +73,5 @@ data:extend({
 })
 
 if mods["Krastorio2"] then
-  util.add_product("kr-enriched-copper", { name = "indite-ore", amount = 1, probability = 0.09 })
+  util.add_product("kr-enriched-copper", { type = "item", name = "indite-ore", amount = 1, probability = 0.09 })
 end
