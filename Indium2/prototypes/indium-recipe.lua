@@ -40,12 +40,12 @@ data:extend({
 })
 
 local solder_ingredients = {{type="item", name="indium-plate", amount=6}}
-if mods["bzlead2"] then
+if util.bz.lead then
   solder_ingredients = {{type="item", name="indium-plate", amount=3}, {type="item", name="lead-plate", amount=3}}
 end
 local solder_category = "crafting"
 local solder_subgroup = "intermediate-product"
-if mods["bzfoundry2"] then
+if util.bz.foundry then
   solder_category = "founding"
   solder_subgroup = "foundry-intermediate"
 end
@@ -94,18 +94,20 @@ data:extend({
   }
 })
 
-if mods["bzsilicon2"] and data.raw.item["solar-cell"] then
+if util.bz.silicon and data.raw.item["solar-cell"] then
   local solar_cell_ingredients = {{type="item", name="copper-plate", amount=1}, {type="item", name="indium-plate", amount=1}, {type="item", name="electronic-circuit", amount=2}}
   if mods["Krastorio2"] then
     table.insert(solar_cell_ingredients, {type="item", name="kr-rare-metals", amount=1})
   end
+  local mod = mods.bzsilicon and "__bzsilicon__" or "__bzsilicon2__"
+
   data:extend({
     {
       type = "recipe",
       name = "indium-solar-cell",
       icons =
             {
-                { icon = "__bzsilicon2__/graphics/icons/solar-cell.png", icon_size = 64 },
+                { icon = mod .. "/graphics/icons/solar-cell.png", icon_size = 64 },
                 { icon = "__Indium2__/graphics/icons/indium-plate.png", icon_size = 64, scale=0.2, shift= {-8, -8}},
             },
       category = "advanced-crafting",
@@ -121,22 +123,23 @@ if mods["bzsilicon2"] and data.raw.item["solar-cell"] then
 end
 
 local solder_pcb_ingredients = {{type="item", name="indium-plate", amount=10}}
-if mods["bztin2"] then
+if util.bz.tin then
   solder_pcb_ingredients = {{type="item", name="indium-plate", amount=6}, {type="item", name="tin-plate", amount=5}}
 end
 local solder_pcb_category = "crafting"
 local solder_pcb_subgroup = "intermediate-product"
-if mods["bzfoundry2"] then
+if util.bz.foundry then
   solder_pcb_category = "founding"
   solder_pcb_subgroup = "foundry-intermediate"
 end
-if mods["bismuth"] and mods["bztin2"] then
+if mods["bismuth"] and util.bz.tin then
+  local mod = mods.bztin and "__bztin__" or "__bztin2__"
   data:extend({
     {
       type = "recipe",
       name = "indium-pcb-solder",
       icons = {
-                  { icon = "__bztin2__/graphics/icons/solder.png", icon_size = 128, tint = {r = 0.7, g = 0.5, b = 0.9, a = 1} },
+                  { icon = mod .. "/graphics/icons/solder.png", icon_size = 128, tint = {r = 0.7, g = 0.5, b = 0.9, a = 1} },
                   { icon = "__Indium2__/graphics/icons/indium-plate.png", icon_size = 64, scale=0.2, shift= {-8, -8}},
                 },
       group = "intermediate-products",
@@ -166,7 +169,7 @@ if mods["BrassTacks-Updated"] and data.raw.item["airtight-seal"]then
       order = "c",
       enabled = false,
       energy_required = 5,
-      ingredients = {{type="item", name="bolted-flange", amount=1}, mods["bzcarbon2"] and {type="item", name="graphite", amount=4}, {type="item", name="indium-solder", amount=2}},
+      ingredients = {{type="item", name="bolted-flange", amount=1}, util.bz.carbon and {type="item", name="graphite", amount=4}, {type="item", name="indium-solder", amount=2}},
       results = {{type="item", name="airtight-seal", amount=2}},
     }
   })

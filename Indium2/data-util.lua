@@ -1,5 +1,19 @@
 local util = {}
 
+util.bz = {}
+util.bz.carbon = mods["bzcarbon"] or mods["bzcarbon2"]
+util.bz.lead = mods["bzlead"] or mods["bzlead2"]
+util.bz.silicon = mods["bzsilicon"] or mods["bzsilicon2"]
+util.bz.tin = mods["bztin"] or mods["bztin2"]
+util.bz.titanium = mods["bztitanium"] or mods["bztitanium2"]
+util.bz.zirconium = mods["bzzirocnium"] or mods["bzzirocnium2"]
+util.bz.gold = mods["bzgold"] or mods["bzgold2"]
+util.bz.aluminum = mods["bzaluminum"] or mods["bzaluminum2"]
+util.bz.gas = mods["bzgas"] or mods["bzgas2"]
+util.bz.chlorine = mods["bzchlorine"] or mods["bzchlorine2"]
+util.bz.tungsten = mods["bztungsten"] or mods["bztungsten2"]
+util.bz.foundry = mods["bzfoundry"] or mods["bzfoundry2"] 
+
 -- se landfill
 -- params: ore, icon_size
 function util.se_landfill(params)
