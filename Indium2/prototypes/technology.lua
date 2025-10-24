@@ -58,8 +58,6 @@ data:extend(
     },
   })
 if (util.bz.tin and mods["bismuth"]) or false then
-  local mod = mods.bztin and "__bztin__" or "__bztin2__"
-
 data:extend(
   {
     {
@@ -67,7 +65,7 @@ data:extend(
       name = "indium-pcb-solder",
       icons =
       {
-        { icon = mod .. "/graphics/icons/solder.png", icon_size = 128, tint = {r = 0.7, g = 0.5, b = 0.9, a = 1} },
+        { icon = "__" .. util.bz.tin .. "__/graphics/icons/solder.png", icon_size = 128, tint = {r = 0.7, g = 0.5, b = 0.9, a = 1} },
         { icon = "__Indium2__/graphics/icons/indium-plate.png", icon_size = 64, shift= {-8, -8}},
       },
       prerequisites = {"indium-processing"},

@@ -99,7 +99,6 @@ if util.bz.silicon and data.raw.item["solar-cell"] then
   if mods["Krastorio2"] then
     table.insert(solar_cell_ingredients, {type="item", name="kr-rare-metals", amount=1})
   end
-  local mod = mods.bzsilicon and "__bzsilicon__" or "__bzsilicon2__"
 
   data:extend({
     {
@@ -107,7 +106,7 @@ if util.bz.silicon and data.raw.item["solar-cell"] then
       name = "indium-solar-cell",
       icons =
             {
-                { icon = mod .. "/graphics/icons/solar-cell.png", icon_size = 64 },
+                { icon = "__" .. util.bz.silicon .. "__/graphics/icons/solar-cell.png", icon_size = 64 },
                 { icon = "__Indium2__/graphics/icons/indium-plate.png", icon_size = 64, scale=0.2, shift= {-8, -8}},
             },
       category = "advanced-crafting",
@@ -133,13 +132,12 @@ if util.bz.foundry then
   solder_pcb_subgroup = "foundry-intermediate"
 end
 if mods["bismuth"] and util.bz.tin then
-  local mod = mods.bztin and "__bztin__" or "__bztin2__"
   data:extend({
     {
       type = "recipe",
       name = "indium-pcb-solder",
       icons = {
-                  { icon = mod .. "/graphics/icons/solder.png", icon_size = 128, tint = {r = 0.7, g = 0.5, b = 0.9, a = 1} },
+                  { icon = "__" .. util.bz.tin .. "__/graphics/icons/solder.png", icon_size = 128, tint = {r = 0.7, g = 0.5, b = 0.9, a = 1} },
                   { icon = "__Indium2__/graphics/icons/indium-plate.png", icon_size = 64, scale=0.2, shift= {-8, -8}},
                 },
       group = "intermediate-products",
