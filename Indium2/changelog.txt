@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.4
+Date: 01.11.2025
+  Changes:
+    - This mod can now be used with either original bz mods or the forks
+  Bug Fixes:
+    - Fix K2 matter integration (thanks pla)
+---------------------------------------------------------------------------------------------------
 Version: 2.0.3
 Date: 21.10.2025
   Changes:
