@@ -9,6 +9,7 @@
   "dependencies": [
     "base >= 2.0.0",
     "bzlib",
+    "? 248k-Redux >= 0.1.35",
     "? bismuth",
     "? BrassTacks-Updated",
     "? bzcarbon",
