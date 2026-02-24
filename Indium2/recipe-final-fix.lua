@@ -2,7 +2,7 @@ local util = require("data-util")
 
 util.remove_ingredient("chemical-science-pack", "kr-blank-tech-card")
 util.remove_ingredient("chemical-science-pack", "bismuth-glass")
-util.remove_ingredient("chemical-science-pack", "el_energy_crystal_item")
+util.remove_ingredient("chemical-science-pack", "el_energy_crystal")
 util.add_ingredient("chemical-science-pack", "blank-advanced-tech-card", 5)
 
 if mods["space-exploration"] then

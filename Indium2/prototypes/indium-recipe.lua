@@ -177,9 +177,9 @@ if mods["BrassTacks-Updated"] and data.raw.item["airtight-seal"]then
   util.add_productivity("indium-airtight-seal")
 end
 
-local blank_advanced_tech_card_ingredients = {(data.raw.item["kr-blank-tech-card"] and {type="item", name="kr-blank-tech-card", amount=2}) or {type="item", name="steel-plate", amount=2},(data.raw.item[mods["Krastorio2"] and "kr-glass" or "glass"] and {type="item", name=mods["Krastorio2"] and "kr-glass" or "glass", amount=5}) or {type="item", name="copper-cable", amount=5}, {type="item", name="indium-solder", amount=2}, (data.raw.item["el_energy_crystal_item"] and {type="item", name="el_energy_crystal_item", amount=1}) or {type="item", name="battery", amount=1}}
+local blank_advanced_tech_card_ingredients = {(data.raw.item["kr-blank-tech-card"] and {type="item", name="kr-blank-tech-card", amount=2}) or {type="item", name="steel-plate", amount=2},(data.raw.item[mods["Krastorio2"] and "kr-glass" or "glass"] and {type="item", name=mods["Krastorio2"] and "kr-glass" or "glass", amount=5}) or {type="item", name="copper-cable", amount=5}, {type="item", name="indium-solder", amount=2}, (data.raw.item["el_energy_crystal"] and {type="item", name="el_energy_crystal", amount=1}) or {type="item", name="battery", amount=1}}
 if mods["bismuth"] then
-  blank_advanced_tech_card_ingredients = {(data.raw.item["kr-blank-tech-card"] and {type="item", name="kr-blank-tech-card", amount=2}) or {type="item", name="steel-plate", amount=2}, {type="item", name="bismuth-glass", amount=4}, {type="item", name="indium-solder", amount=2}, (data.raw.item["el_energy_crystal_item"] and {type="item", name="el_energy_crystal_item", amount=1}) or {type="item", name="battery", amount=1}}
+  blank_advanced_tech_card_ingredients = {(data.raw.item["kr-blank-tech-card"] and {type="item", name="kr-blank-tech-card", amount=2}) or {type="item", name="steel-plate", amount=2}, {type="item", name="bismuth-glass", amount=4}, {type="item", name="indium-solder", amount=2}, (data.raw.item["el_energy_crystal"] and {type="item", name="el_energy_crystal", amount=1}) or {type="item", name="battery", amount=1}}
 end
 
 data:extend({
