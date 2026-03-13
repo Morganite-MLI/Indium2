@@ -4,8 +4,8 @@ local util = require("__bzlib__/data-util")
 
 -- Mod changes
 if mods["IfNickel-Updated"] then
-    if mods["IfNickel-Updated"] and util.bz.thungsten then
-    util.replace_some_ingredient(mods["IfNickel-Updated"] and "gimbaled-thruster", util.bz.thungsten and "rocket-engine-nozzle", 1, "cryogenic-seal", 1)
+    if mods["IfNickel-Updated"] and util.bz.tungsten then
+    util.replace_some_ingredient(mods["IfNickel-Updated"] and "gimbaled-thruster", util.bz.tungsten and "rocket-engine-nozzle", 1, "cryogenic-seal", 1)
     end
     util.remove_ingredient("satellite", "gimbaled-thruster")
 end
