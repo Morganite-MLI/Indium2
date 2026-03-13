@@ -1,4 +1,4 @@
-local util = require("data-util")
+local util = require("__bzlib__/data-util")
 
 if mods["248k-Redux"] then
 data:extend({

@@ -8,6 +8,7 @@
   "homepage": "https://discord.gg/ufvFUJtVwk",
   "dependencies": [
     "base >= 2.0.0",
+    "bzlib",
     "? bismuth",
     "? BrassTacks-Updated",
     "? bzcarbon",

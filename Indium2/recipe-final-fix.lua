@@ -1,4 +1,4 @@
-local util = require("data-util")
+local util = require("__bzlib__/data-util")
 
 util.remove_ingredient("chemical-science-pack", "kr-blank-tech-card")
 util.remove_ingredient("chemical-science-pack", "bismuth-glass")

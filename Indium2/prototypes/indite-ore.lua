@@ -1,6 +1,6 @@
 local resource_autoplace = require('resource-autoplace');
 local item_sounds = require('__base__.prototypes.item_sounds')
-local util = require("data-util")
+local util = require("__bzlib__/data-util")
 
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["indite-ore"] = {}
 data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["indite-ore"] = {}
