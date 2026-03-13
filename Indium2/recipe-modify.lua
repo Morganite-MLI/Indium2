@@ -11,7 +11,7 @@ if mods["IfNickel-Updated"] then
 end
 
 if mods["space-exploration"] then
-    util.add_product(mods["space-exploration"] and "se-scrap-recycling", { type = "item", name = "indite-ore", amount=1, probability=0.05})
+    util.add_product(mods["space-exploration"] and "se-scrap-hard-recycling", { type = "item", name = "indite-ore", amount=1, probability=0.05})
 
     util.remove_ingredient("se-space-pipe-to-ground", "lead-plate")
     util.remove_ingredient("se-space-pipe-to-ground", "tin-plate")
