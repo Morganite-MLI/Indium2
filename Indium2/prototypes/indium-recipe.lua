@@ -1,4 +1,4 @@
-local util = require("__bzlib__/data-util")
+local util = require("data-util")
 
 data:extend({{
   type = "item-subgroup",
