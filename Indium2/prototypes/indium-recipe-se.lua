@@ -6,7 +6,7 @@ if mods["space-exploration"] then
   se_delivery_cannon_recipes["indium-plate"] = {name= "indium-plate"}
   util.se_landfill({ore="indite-ore"})
 
-  util.se_matter({ore="indite-ore", energy_required=1, quant_out=10, stream_out=60})
+  util.se_matter({ore="indite-ore", energy_required=1, quant_out=10, stream_out=600})
   data:extend({
   {
     type = "item-subgroup",
