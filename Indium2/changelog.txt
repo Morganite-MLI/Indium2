@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.1.2
+Date: 24.05.2026
+  Thanks to Morganite for all the fixes
+  Bug Fixes:
+    - Convert matter recipe generation to use the bzlib function and move to data stage
+    - Fix matter liberation recipe results
+---------------------------------------------------------------------------------------------------
 Version: 2.1.1
 Date: 16.03.2026
   Bug Fixes:
