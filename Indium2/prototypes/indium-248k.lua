@@ -29,7 +29,7 @@ data:extend({
         type = "recipe",
         name = "fi-purify-indium-recipe",
         enabled = false,
-        category = "el_purifier_category",
+        categories = {"el_purifier_category"},
         main_product = "el_dirty_water",
         ingredients = {
             {type="fluid", name="water", amount=50},
@@ -57,7 +57,7 @@ data:extend({
         type = "recipe",
         name = "fi-arc-pure-indium-recipe",
         enabled = false,
-        category = "el_arc_furnace_category",
+        categories = {"el_arc_furnace_category"},
         ingredients = {
             {type="item", name="fi-materials-pure-indium", amount=1},
         },
@@ -74,7 +74,7 @@ data:extend({
         type = "recipe",
         name = "fi-cast-pure-indium-recipe",
         enabled = false,
-        category = "el_caster_category",
+        categories = {"el_caster_category"},
         ingredients = {
             {type="fluid", name="fi-arc-pure-indium", amount=100},
         },

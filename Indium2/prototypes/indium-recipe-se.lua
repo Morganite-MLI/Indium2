@@ -41,7 +41,7 @@ if mods["space-exploration"] then
   },
   {
     type = "recipe",
-    category = "smelting",
+    categories = {"smelting"},
     name = "molten-indium",
     subgroup = "indium",
     results = {
@@ -60,7 +60,7 @@ if mods["space-exploration"] then
   {
     type = "recipe",
     name = "indium-ingot",
-    category = "casting",
+    categories = {"casting"},
     results = {{type="item", name="indium-ingot", amount=1}},
     energy_required = 18.75,
     ingredients = {
@@ -72,7 +72,7 @@ if mods["space-exploration"] then
   },
   {
     type = "recipe",
-    category = "crafting",
+    categories = {"crafting"},
     name = "indium-ingot-to-plate",
 
     icons = {

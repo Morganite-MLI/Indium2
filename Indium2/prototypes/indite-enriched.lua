@@ -20,7 +20,7 @@ data:extend({
                 { icon = "__Indium2__/graphics/icons/enriched-indium.png", icon_size = 64 },
                 { icon = "__Indium2__/graphics/icons/indite-ore.png", icon_size = 64, scale=0.15, shift= {-8, -8}},
               },
-    category = "chemistry",
+    categories = {"chemistry"},
     energy_required = 3,
     enabled = false,
     always_show_made_in = true,
@@ -54,7 +54,7 @@ data:extend({
         { icon = "__Indium2__/graphics/icons/indium-plate.png", icon_size = 64 },
         { icon = "__Indium2__/graphics/icons/enriched-indium.png", icon_size = 64, scale=0.125, shift= {-8, -8}},
       },
-      category = "smelting",
+      categories = {"smelting"},
       energy_required = 16,
       enabled = false,
       always_show_made_in = true,
@@ -66,7 +66,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "dirty-water-filtration-indium",
-		category = "kr-fluid-filtration",
+		categories = {"kr-fluid-filtration"},
 		icons =
 		{
 			{
