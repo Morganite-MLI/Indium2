@@ -20,7 +20,7 @@ if mods["BrassTacks-Updated"] and mods["Krastorio2"] then
   util.set_main_product("enriched-zinc", "enriched-zinc")
   util.add_product("enriched-zinc", { type = "item", name = "indite-ore", amount = 1 })
   util.set_main_product("zinc-plate", "zinc-plate")
-  util.add_product("zinc-plate", { type = "item", name = "indium-plate", amount = 1, probability = 0.1 })
+  util.add_product("zinc-plate", { type = "item", name = "indium-plate", amount = 1, independent_probability = 0.1 })
 end
 
 util.redo_recycling()

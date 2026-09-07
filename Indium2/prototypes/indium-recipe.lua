@@ -20,7 +20,7 @@ data:extend({
   {
     type = "recipe",
     name = "indium-plate",
-    category = "smelting",
+    categories = {"smelting"},
     order = "d[indium-plate]",
     icons = (mods["Krastorio2"] and
         {
@@ -63,7 +63,7 @@ data:extend({
   {
     type = "recipe",
     name = "indium-solder",
-    category = solder_category,
+    categories = {solder_category},
     order = "d[solder]",
     enabled = false,
     energy_required = 4,
@@ -85,7 +85,7 @@ data:extend({
   {
     type = "recipe",
     name = "cryogenic-seal",
-    category = "advanced-crafting",
+    categories = {"advanced-crafting"},
     order = "d[cryogenic-seal]",
     enabled = false,
     energy_required = 4,
@@ -109,7 +109,7 @@ if util.bz.silicon and data.raw.item["solar-cell"] then
                 { icon = "__" .. util.bz.silicon .. "__/graphics/icons/solar-cell.png", icon_size = 64 },
                 { icon = "__Indium2__/graphics/icons/indium-plate.png", icon_size = 64, scale=0.2, shift= {-8, -8}},
             },
-      category = "advanced-crafting",
+      categories = {"advanced-crafting"},
       order = "ab",
       enabled = false,
       energy_required = 4,
@@ -142,7 +142,7 @@ if mods["bismuth"] and util.bz.tin then
                 },
       group = "intermediate-products",
       subgroup = solder_pcb_subgroup,
-      category = solder_pcb_category,
+      categories = {solder_pcb_category},
       order = "c[pcb-solder]",
       enabled = false,
       energy_required = 2,
@@ -163,7 +163,7 @@ if mods["BrassTacks-Updated"] and data.raw.item["airtight-seal"]then
                 { icon = "__BrassTacks-Updated__/graphics/galdoc/icons/airtight-seal.png", icon_size = 64 },
                 { icon = "__Indium2__/graphics/icons/indium-solder.png", icon_size = 64, scale=0.2, shift= {-8, -8}},
             },
-      category = "advanced-crafting",
+      categories = {"advanced-crafting"},
       order = "c",
       enabled = false,
       energy_required = 5,
@@ -196,7 +196,7 @@ data:extend({
   {
     type = "recipe",
     name = "blank-advanced-tech-card",
-    category = "crafting",
+    categories = {"crafting"},
     order = "a01",
     enabled = false,
     energy_required = 4,
