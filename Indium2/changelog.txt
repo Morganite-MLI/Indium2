@@ -1,7 +1,17 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.1.1
+Date: 08.09.2026
+  Compatibility:
+    - Updated for 2.1 (Thanks to pla for doing the fiddly parts)
+  Locale:
+    - Added Polish localization from S3BA
+  Changes:
+    - Fixed changelog format
+---------------------------------------------------------------------------------------------------
 Version: 2.1.2
 Date: 24.05.2026
-  Thanks to Morganite for all the fixes
+  Info:
+    - Thanks to Morganite for all the fixes
   Bug Fixes:
     - Convert matter recipe generation to use the bzlib function and move to data stage
     - Fix matter liberation recipe results
